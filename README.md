@@ -1,0 +1,1 @@
+# ken_high_school
