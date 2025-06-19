@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    font-family: "Bookman Old Style", serif;
+}
+
+header {
+  background: linear-gradient(to right,#0D47A1 ,#64B5F6);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header .logo {
+display: flex;
+align-items: center;
+}
+
+header .logo img {
+width: 77px;
+height: 77px;
+margin-left: 66px;
+}
+@media (max-width: 768px){
+  header .logo img {
+width: 77px;
+height: 77px;
+margin-left: 15px;
+}
+}
+
+header nav {
+display: flex;
+gap: 33px;
+margin-right: 0;
+}
+
+
+header nav a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Bookman Old Style", serif;
+  transition: all 0.3s ease; 
+}
+
+header nav a:hover {
+  color: #f3ff4a; 
+  transform: scale(1.2); 
+  text-decoration: underline; 
+}
+
+.menu-btn {
+  display: none;
+}
+
+.sliding-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sliding-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px); /* Adds blur effect */
+
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .sliding-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .sliding-menu a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Times New Roman", serif;
+    transition: all 0.3s ease;
+  }
+
+  .sliding-menu a:hover {
+    color: #f3ff4a;
+    transform: scale(1.2);
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header nav {
+      display: none; 
+  }
+
+  .menu-btn {
+      display: flex; 
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+
+  .menu-btn div {
+      background-color: #fff;
+      height: 3px;
+      width: 100%;
+      border-radius: 5px;
+  }
+}
+
+
+.footer {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner2.jpg);
+  padding: 20px 50px;
+  color: #ffffff;
+}
+  
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+  
+.venue, .useful-links, .contact, .social {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.acadamic-calender1 h1{
+    font-family: "Bookman Old Style", serif;
+    font-size: 2.5rem;
+}
+  
+section {
+  padding: 20px 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #004080;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #008060;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.download-button:hover {
+  background-color: #00664d;
+}
+
+.footer h3 {
+  color: #ff4757;
+  margin-bottom: 15px;
+}
+  
+.footer p {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px 0;
+}
+  
+.footer a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #ff4757;
+}
+  
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+  
+.social-icons a:hover {
+  color: #ff4757;
+}
+  
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+}
+.footer .venue .logo{
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 768px){
+  .footer .venue .logo{
+    margin-left: 16%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.footer-bottom span {
+  font-weight: bold;
+  color: #ff4757;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer h3 {
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .footer p, .footer a {
+      font-size: 12px;
+      text-align: center;
+  }
+
+  .social-icons {
+      margin-top: 10px;
+  }
+
+  .social-icons a {
+      font-size: 16px;
+      margin: 0 5px;
+  }
+}

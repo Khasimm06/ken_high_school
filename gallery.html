@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KEN | Admissions</title>
+        <link rel="stylesheet" href="gallery.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+        <div class="logo">
+            <img src="logooo.png" alt="Logo">
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="Gallery.html">Gallery</a>
+          <!--- <a href="circular.html">Circulars / Notices</a> -->
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="sliding-menu">
+          <span class="close-menu">&times;</span>
+          <a href="index.html">Home</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="Gallery.html">Gallery</a>
+          <!--- <a href="circular.html">Circulars / Notices</a> -->
+          <a href="contact.html">Contact US</a>
+        </div>
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const slidingMenu = document.querySelector('.sliding-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        menuBtn.addEventListener('click', () => {
+            slidingMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            slidingMenu.classList.remove('active');
+        });
+    </script>
+
+   <div class="background-decor">
+    <img src="astronut.png" class="floating astronaut" alt="Astronaut" />
+    <img src="cartoon1.png" class="floating cartoon1" alt="Cartoon" />
+    <img src="cartoon2.png" class="floating cartoon2" alt="Cartoon" />
+    <img src="cartoon3.png" class="floating cartoon3" alt="Cartoon" />
+   </div>
+
+    <h1 class="gallery-title"><i>School Gallery</i></h1>
+
+  <div class="gallery-filters">
+    <button class="filter-btn"><i>Events</i></button>
+    <button class="filter-btn"><i>Sports</i></button>
+    <button class="filter-btn"><i>Annual Day</i></button>
+  </div>
+
+  <div class="gallery-grid all-section">
+    <div class="alt-layout">
+      <div class="text-block">
+        <h2><i>Independence Day</i></h2>
+        <p><i>Celebrated on 15th August every year, is a proud and significant occasion for all Indians. It marks the day in 1947 when India gained freedom from British colonial rule. In this day is celebrated with great enthusiasm and patriotic fervor. <br> <br>The day usually begins with the hoisting of the national flag by the school principal or a chief guest, followed by the singing of the national anthem, "Jana Gana Mana." Students and teachers alike stand in attention, honoring the sacrifices made by our freedom fighters. Speeches are delivered by our students and faculty, highlighting the importance of freedom, the struggles faced during the independence movement, and the responsibilities of citizens in a free India.<br> <br>
+Cultural programs are an integral part of the celebration. Students participate in patriotic songs, dances, skits, and poetry recitations that reflect India's journey towards independence. Many schools also organize competitions such as essay writing, drawing, and elocution to engage students creatively with the theme of independence.
+Teachers take this opportunity to instill values such as unity, discipline, and national pride in students. Decorations in the school are usually vibrant, with tri-color balloons, flags, and rangoli adorning the campus.</i></p>
+      </div>
+      <div class="image-block">
+        <img src="event1.jpg" alt="Event Image" />
+      </div>
+    </div>
+
+    <div class="alt-layout reverse">
+      <div class="image-block">
+        <img src="sports1.webp" alt="Sports Image" />
+      </div>
+      <div class="text-block">
+        <h2><i>Annual Sports Day</i></h2>
+        <p><i>Sports Day at KEN E.M High School typically begins with a grand opening ceremony featuring a march-past by all houses, the lighting of the sports flame, and an oath of fair play. The school playground transforms into a colorful arena filled with cheering, banners, and excitement. Students from various classes participate in a range of athletic events including sprints, long jump, relay races, sack races, and tug of war. There are also fun activities and games for teachers and parents, making it a community celebration. <br><br>
+            The event aims to promote physical fitness, teamwork, discipline, and leadership skills among students. Winners are awarded medals and certificates, and special trophies are given to the best-performing houses.The principal and chief guests deliver motivational speeches highlighting the importance of sports in shaping character and building resilience. Sports Day at KEN E.M High School not only celebrates talent and hard work but also reinforces the values of fair competition and mutual respect among all.
+        </i></p>
+      </div>
+    </div>
+
+    <div class="alt-layout">
+      <div class="text-block">
+        <h2><i>Annual Day Function</i></h2>
+        <p><i>The Annual Day celebration at KEN E.M High School is one of the most awaited events of the academic year. Held with great enthusiasm and grandeur, it showcases the talents, achievements, and creativity of the students. This vibrant event typically includes a cultural program filled with music, dance, drama, and inspiring speeches that reflect the rich traditions and modern values embraced by the school. <br><br>
+        The celebration begins with a welcome address by the principal, followed by the lighting of the lamp—a symbol of knowledge and enlightenment. Students from all classes actively participate in various performances that highlight both artistic talent and team spirit. Awards and certificates are distributed to students who have excelled in academics, sports, and extracurricular activities throughout the year.<br><br>
+    Parents, teachers, and invited guests join the celebration, making it a joyful and memorable day for the entire school community. The Annual Day not only provides a platform for students to express themselves but also strengthens the bond between the school and families.</i></p>
+      </div>
+      <div class="image-block">
+        <img src="annual1.jpeg" alt="Annual Day Image" />
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+     function filterGallery(category) 
+ {
+  const allSection = document.querySelector('.all-section');
+  const filterGallery = document.querySelector('.filter-gallery');
+  const items = document.querySelectorAll('.gallery-item');
+
+    if (category === 'all') {
+        allSection.style.display = 'block';
+        filterGallery.style.display = 'none';
+    } else {
+        allSection.style.display = 'none';
+        filterGallery.style.display = 'flex';
+        items.forEach(item => {
+        item.style.display = item.classList.contains(category) ? 'inline-block' : 'none';
+    });
+    }
+ } 
+   </script>
+
+    <footer class="footer">
+    <div class="footer-container">
+      <!-- Venue Section -->
+      <div class="venue">
+        <img src="logooo.png" alt="GBU Logo" class="logo" />
+        <h3>Location</h3>
+        <p>KEN E.M HIGH SCHOOL</p>
+        <p>L.B. Reddy Nagar</p>
+        <p>Krishna Distric,Mylavaram</p>
+        <p>Andhra Pradesh - 521230</p>
+        <p>INDIA</p>
+      </div>
+
+      <!-- Useful Links Section -->
+      <div class="useful-links">
+        <h3>USEFUL LINKS</h3>
+        <ul>
+          <li><a href="#">Location & IEEE Main page Link</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact">
+        <h3>CONTACT US</h3>
+        <p>xxxxxx</p>
+        <p>📞 Phone: <a href="tel:+91">+91 xxxxx xxxxx</a></p>
+        <p>xxxxxx</p>
+        <p>📞 Phone: <a href="tel:+91">+91 xxxxx xxxxx</a></p>
+        <p>📧 Email: <a href="mailto:xxxxxx@gmail.com">Click me</a></p>
+        <p><a href="#">Locate Us</a></p>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="social">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+    </div>
+
+     <div class="footer-bottom">
+        <p>© 2024 - KEM HIGH SCHOOL @2025 | Design & Developed by <a href="designer&developer.html">H6 - Tech Solutions</a></p>
+     </div>
+ </footer>
+
+</body>
+
+</html>
