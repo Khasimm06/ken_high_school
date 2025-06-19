@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEN HIGH SCHOOL</title>
+    <link rel="stylesheet" href="home-page.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+ <header>
+        <div class="logo">
+            <img src="images/logooo.png" alt="Logo">
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="Gallery.html">Gallery</a>
+          <!--- <a href="circular.html">Circulars / Notices</a> -->
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="sliding-menu">
+          <span class="close-menu">&times;</span>
+          <a href="index.html">Home</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="Gallery.html">Gallery</a>
+          <!--- <a href="circular.html">Circulars / Notices</a> -->
+          <a href="contact.html">Contact US</a>
+        </div>
+    </header>
+
+  <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const slidingMenu = document.querySelector('.sliding-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        menuBtn.addEventListener('click', () => {
+            slidingMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            slidingMenu.classList.remove('active');
+        });
+    </script>
+
+<section class="banner">
+  <div class="content">
+    <div class="important-dates">
+      <h1>Welcome </h1>
+      <h1>to</h1>
+    </div>
+    <h1>KEN E.M High school</h1><br>
+    <div class="important-dates">
+      <h2>Establishment in 1986</h2>
+    </div>
+      <h2><i>A place where learning meets inspiration and every child’s potential is nurtured with care</i></h2>
+      <h2><i>by</i></h2>
+      <h2><i>Let us together shape the future with knowledge, discipline, and integrity</i></h2><br><br>
+      <a href="admissions.html" class="btn">For Admissions</a> <a href="gallery.html" class="btn">For Gallery</a><br><br>
+      <div class="important-dates">      
+        <h2><i>Click the above "For Admissions" for new Admissions & Circulars too...</i><h2>
+      </div>
+  </div>
+</section>
+
+<section class="about-us">
+    <div class="about-content">
+        <h2>ABOUT US</h2>
+        <div class="underline"></div>
+        <p>
+            Welcome to KEM E.M HIGH SCHOOL, a trusted center of excellence in education located in the heart of Vijayawada. Since our establishment, we have been committed to providing quality education, strong moral values, and a holistic learning environment that prepares students not just for exams, but for life.<br><br>
+            At KEN E.M HIGH SCHOOL, we believe that every child is unique, and we strive to unlock their fullest potential through personalized attention, experienced faculty, modern infrastructure, and a blend of academics with extra-curricular activities.<br><br>We invite you to explore our website and learn more about our academic programs, vibrant student life, and the values that drive us. Whether you are a prospective parent, student, or well-wisher, we look forward to connecting with you.        </p><br>
+        <a href="Gallery.html" class="btn">Gallery</a>
+    </div>
+    <div class="about-image">
+        <img src="images/banner.jpg" alt="LBRCE">
+    </div>
+</section>
+
+<section class="about-us">
+    <div class="about-image">
+        <img src="images/obj.jpg" alt="">
+    </div>
+    <div class="about-content">
+        <h2>OBJECTIVE OF THE CONFERENCE</h2>
+        <div class="underline"></div>
+        <p>
+            To foster collaboration and knowledge exchange among Researchers, professionals, Academicians in the fields of intelligent computing, Circuits, Signal / Image Processing, communications, Smart Systems and Energy Systems.
+            <br><br>
+            To provide platform for knowledge sharing, Networking among the professionals, encourage interdisciplinary approach <br><br>
+            To be a leading conference that drives innovation and knowledge in intelligent computing and communication, contributing to the development of smarter, more efficient systems that address global challenges        </p>
+        <a href="Gallery.html" class="btn">Gallery</a>
+    </div>
+</section>
+
+<section class="about-us">
+    <div class="about-content">
+        <h2>CONFERENCE HIGHLIGHTS, SCOPES AND EXPECTED OUTCOMES</h2>
+        <div class="underline"></div>
+        <p>Advances in VLSI, Communication and Signal processing technologies are  changing the lifestyle in present days. This conference aims to address developments in technology for creating intelligent solutions to societal Problems. It provides a platform for the researchers to share their views for collaborative innovations  across various disciplines.<br><br>
+            Two-days Virtual International Conference (ICAECSP-2021) will be organized by department of Electronics and Communication Engineering, Lakireddy Bali Reddy College of Engineering during December 17th & 18th, 2021 through online mode. A number of proven personalities from Industry, Research Organizations and Academic Institutions have given their acceptance to grace the conference</p>
+        <ul>
+            <li>Keynote speeches by leading experts in circuits, computing, and smart energy.</li>
+            <li>Technical paper presentations showcasing innovative research.</li>
+            <li>Hands-on workshops on AI, IoT, and energy technologies.</li>
+            <li>Networking opportunities with academia and industry leaders</li>
+            <li>Energy-efficient circuits and systems.</li>
+            
+        </ul>
+        <a href="Gallery.html" class="btn">Gallery</a>
+    </div>
+    <div class="about-image">
+        <img src="images/scope.jpg" alt="LBRCE">
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+      <div class="venue">
+        <img src="images/logooo.png" alt="School Logo" class="logo" />
+        <h3>Location</h3>
+        <p>KEN E.M HIGH SCHOOL</p>
+        <p>L.B. Reddy Nagar</p>
+        <p>Krishna Distric,Mylavaram</p>
+        <p>Andhra Pradesh - 521230</p>
+        <p>INDIA</p>
+      </div>
+
+      <!-- Useful Links Section -->
+      <div class="useful-links">
+        <h3>USEFUL LINKS</h3>
+        <ul>
+          <li><a href="#">Location & IEEE Main page Link</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact">
+        <h3>CONTACT US</h3>
+        <p>xxxxxx</p>
+        <p>📞 Phone: <a href="tel:+91">+91 xxxxx xxxxx</a></p>
+        <p>xxxxxx</p>
+        <p>📞 Phone: <a href="tel:+91">+91 xxxxx xxxxx</a></p>
+        <p>📧 Email: <a href="mailto:xxxxxx@gmail.com">Click me</a></p>
+        <p><a href="#">Locate Us</a></p>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="social">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 - KEM HIGH SCHOOL @2025 | Design & Developed by <a href="designer&developer.html">H6 - Tech Solutions</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KEN | Academics</title>
+        <link rel="stylesheet" href="academics.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <div class="logo">
+            <img src="images/logooo.png" alt="Logo">
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="Gallery.html">Gallery</a>
+          <!--- <a href="circular.html">Circulars / Notices</a> -->
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="sliding-menu">
+          <span class="close-menu">&times;</span>
+          <a href="index.html">Home</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="Gallery.html">Gallery</a>
+          <!--- <a href="circular.html">Circulars / Notices</a> -->
+          <a href="contact.html">Contact US</a>
+        </div>
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const slidingMenu = document.querySelector('.sliding-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        menuBtn.addEventListener('click', () => {
+            slidingMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            slidingMenu.classList.remove('active');
+        });
+    </script>
+
+  <div class="background-decor">
+    <img src="images/astronut.png" class="floating astronaut" alt="Astronaut" />
+    <img src="images/cartoon1.png" class="floating cartoon1" alt="Cartoon" />
+    <img src="images/cartoon2.png" class="floating cartoon2" alt="Cartoon" />
+    <img src="images/cartoon3.png" class="floating cartoon3" alt="Cartoon" />
+  </div>
+
+  <section class="academic-structure">
+    <h1><i>Academic Structure by Levels</i></h1>
+
+    <div class="level" onclick="toggleContent(this)">
+      <h2><i>Pre-Primary (Nursery, LKG, UKG)</i></h2>
+      <div class="content">
+        <img src="images/pre-primary.jpg" alt="Pre-Primary Image" class="level-img" />
+        <p><strong>Objective:</strong> Develop social, emotional, motor, and early cognitive skills.</p>
+        <ul>
+          <li>Language development, storytelling, rhymes</li>
+          <li>Fine motor skills, hand-eye coordination</li>
+          <li>Basic numeracy (1-20, shapes, colors)</li>
+          <li>Social skills, hygiene, play-based learning</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="level" onclick="toggleContent(this)">
+      <h2><i>Primary (Class 1-5)</i></h2>
+      <div class="content">
+        <img src="images/primary.jpg" alt="Primary Image" class="level-img" />
+        <p><strong>Objective:</strong> Build foundational skills in literacy, numeracy, and values.</p>
+        <ul>
+          <li>English, Telugu/Hindi, Math, EVS, Computers</li>
+          <li>Reading, writing fluency & basic math operations</li>
+          <li>Activity-based learning and term assessments</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="level" onclick="toggleContent(this)">
+      <h2><i>Middle School (Class 6-8)</i></h2>
+      <div class="content">
+        <img src="images/middle-school.webp" alt="Middle School Image" class="level-img" />
+        <p><strong>Objective:</strong> Deepen conceptual understanding and skill-building.</p>
+        <ul>
+          <li>English, Math, Science, Social, Computers</li>
+          <li>Project-based learning, logical reasoning</li>
+          <li>Quizzes, exhibitions, co-curricular growth</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="level" onclick="toggleContent(this)">
+      <h2><i>Secondary (Class 9-10)</i></h2>
+      <div class="content">
+        <img src="images/secondary.png" alt="Secondary Image" class="level-img" />
+        <p><strong>Objective:</strong> Board exam readiness and career foundation.</p>
+        <ul>
+          <li>English, Math, Science, Social, Second Language</li>
+          <li>Lab work, pre-finals, extra coaching</li>
+          <li>Career awareness and guidance sessions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleContent(element) {
+      element.classList.toggle("active");
+    }
+  </script>
+  <div class="acadamic-calender1">
+     <h1><i>Academic Calendar <br>2025-26</i></h1>
+  </div>
+   
+
+  <div class="container">
+    <section>
+      <h2>📅 Academic Year</h2>
+      <ul>
+        <li><strong>Start Date:</strong> June 10, 2025</li>
+        <li><strong>End Date:</strong> March 31, 2026</li>
+        <li><strong>Total Working Days:</strong> 210 days</li>
+        <li><strong>Vacations:</strong> April – May (Summer), 1 week in December (Winter)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📝 Exam Periods</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Term</th>
+            <th>Duration</th>
+            <th>Exam Schedule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Term 1</td>
+            <td>June 10 – Oct 5</td>
+            <td>Mid-Term: Aug 1–5<br>Term 1 Exams: Sept 25 – Oct 5</td>
+          </tr>
+          <tr>
+            <td>Term 2</td>
+            <td>Oct 17 – Mar 31</td>
+            <td>Pre-Finals: Jan 20–25<br>Final Exams: Mar 10 – Mar 20</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>👨‍👩‍👧 PTM Dates</h2>
+      <ul>
+        <li>July 15, 2025 – After Unit Tests</li>
+        <li>October 10, 2025 – Term 1 Results</li>
+        <li>January 28, 2026 – Pre-Finals</li>
+        <li>March 25, 2026 – Final Year Review</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎉 Important Events</h2>
+      <ul>
+        <li>Independence Day – August 15, 2025</li>
+        <li>Children’s Day – November 14, 2025</li>
+        <li>Annual Day – December 15, 2025</li>
+        <li>Sports Day – January 12, 2026</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎊 Holidays</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Holiday</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ramzan / Eid-ul-Fitr</td><td>April 2, 2025</td></tr>
+          <tr><td>Independence Day</td><td>August 15, 2025</td></tr>
+          <tr><td>Dussehra Break</td><td>Oct 6 – 16, 2025</td></tr>
+          <tr><td>Diwali</td><td>October 30–31, 2025</td></tr>
+          <tr><td>Christmas</td><td>December 25, 2025</td></tr>
+          <tr><td>Sankranti</td><td>January 14–16, 2026</td></tr>
+          <tr><td>Republic Day</td><td>January 26, 2026</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script>
+    console.log("Academic Calendar loaded.");
+  </script>
+
+ <footer class="footer">
+    <div class="footer-container">
+      <!-- Venue Section -->
+      <div class="venue">
+        <img src="images/logooo.png" alt="GBU Logo" class="logo" />
+        <h3>Location</h3>
+        <p>KEN E.M HIGH SCHOOL</p>
+        <p>L.B. Reddy Nagar</p>
+        <p>Krishna Distric,Mylavaram</p>
+        <p>Andhra Pradesh - 521230</p>
+        <p>INDIA</p>
+      </div>
+
+      <!-- Useful Links Section -->
+      <div class="useful-links">
+        <h3>USEFUL LINKS</h3>
+        <ul>
+          <li><a href="#">Location & IEEE Main page Link</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact">
+        <h3>CONTACT US</h3>
+        <p>xxxxxx</p>
+        <p>📞 Phone: <a href="tel:+91">+91 xxxxx xxxxx</a></p>
+        <p>xxxxxx</p>
+        <p>📞 Phone: <a href="tel:+91">+91 xxxxx xxxxx</a></p>
+        <p>📧 Email: <a href="mailto:xxxxxx@gmail.com">Click me</a></p>
+        <p><a href="#">Locate Us</a></p>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="social">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+    </div>
+
+     <div class="footer-bottom">
+        <p>© 2024 - KEM HIGH SCHOOL @2025 | Design & Developed by <a href="designer&developer.html">H6 - Tech Solutions</a></p>
+     </div>
+ </footer>
+
+</body>
+
+</html>
